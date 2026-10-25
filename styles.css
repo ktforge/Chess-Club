@@ -1,280 +1,284 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    background-color: #f4efe6;
-    color: #1e1e1e;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f4efe6;
+  color: #1e1e1e;
 }
 
+/* header stays across the top */
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #1e1e1e;
 }
 
 .logo {
-    font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-    color: #f4efe6;
-    text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #f4efe6;
+  text-decoration: none;
 }
 
 .nav-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-    color: #f4efe6;
-    text-decoration: none;
-    font-weight: 600;
+  color: #f4efe6;
+  text-decoration: none;
+  font-weight: 600;
 }
 
+/* intro banner */
 .hero {
-    padding: 6rem 5%;
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  padding: 6rem 5%;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1600");
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
 }
 
 .hero h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 3.5rem;
-    margin: 0 0 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  margin: 0 0 1rem;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    max-width: 40em;
-    margin: 0 auto 2rem;
+  font-size: 1.25rem;
+  max-width: 40em;
+  margin: 0 auto 2rem;
 }
 
 .button {
-    display: inline-block;
-    padding: 0.75em 2em;
-    background-color: #b58863;
-    color: #ffffff;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 0.375rem;
+  display: inline-block;
+  padding: 0.75em 2em;
+  background-color: #b58863;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.375rem;
 }
 
+/* about: text on one side, photos on the other */
 .about {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    padding: 4rem 5%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 5%;
 }
 
 .about-text {
-    width: 50%;
+  width: 50%;
 }
 
 .about-text h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.25rem;
-    margin-top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  margin-top: 0;
 }
 
 .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-
 .about-image {
-    width: 50%;
-    margin: 0;
+  width: 50%;
+  margin: 0;
 }
 
 .about-image img {
-    width: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
 .about-image img + img {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .about-image figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-    color: #6b6b6b;
-    text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b6b6b;
+  text-align: center;
 }
 
+/* schedule cards */
 .schedule {
-    padding: 4rem 5%;
-    background-color: #1e1e1e;
-    color: #f4efe6;
-    text-align: center;
+  padding: 4rem 5%;
+  background-color: #1e1e1e;
+  color: #f4efe6;
+  text-align: center;
 }
 
 .schedule h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.25rem;
-    margin-top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  margin-top: 0;
 }
 
 .schedule-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .schedule-card {
-    width: 30%;
-    padding: 2rem 1.5rem;
-    background-color: #2b2b2b;
-    border-top: 0.25rem solid #b58863;
-    border-radius: 0.5rem;
-    text-align: left;
+  width: 30%;
+  padding: 2rem 1.5rem;
+  background-color: #2b2b2b;
+  border-top: 0.25rem solid #b58863;
+  border-radius: 0.5rem;
+  text-align: left;
 }
 
 .schedule-card h3 {
-    font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-    margin: 0 0 0.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
 }
 
 .schedule-card .time {
-    color: #b58863;
-    font-weight: 600;
-    margin: 0 0 1rem;
+  color: #b58863;
+  font-weight: 600;
+  margin: 0 0 1rem;
 }
 
 .schedule-card p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
-
+/* membership cards */
 .join {
-    padding: 4rem 5%;
-    text-align: center;
+  padding: 4rem 5%;
+  text-align: center;
 }
 
 .join h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.25rem;
-    margin-top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  margin-top: 0;
 }
 
 .join > p {
-    max-width: 35em;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
+  max-width: 35em;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
 }
 
 .membership-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .membership-card {
-    width: 35%;
-    padding: 2rem;
-    border: 0.125rem solid #d8cfc0;
-    border-radius: 0.5rem;
-    background-color: #ffffff;
+  width: 35%;
+  padding: 2rem;
+  border: 0.125rem solid #d8cfc0;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
 }
 
+/* the plan I want to stand out */
 .membership-card.featured {
-    border-color: #b58863;
+  border-color: #b58863;
 }
 
 .membership-card h3 {
-    font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-    margin: 0 0 0.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
 }
 
 .price {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #b58863;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #b58863;
 }
 
 .site-footer {
-    padding: 1.5rem 5%;
-    background-color: #1e1e1e;
-    color: #f4efe6;
-    text-align: center;
-    font-size: 0.875rem;
+  padding: 1.5rem 5%;
+  background-color: #1e1e1e;
+  color: #f4efe6;
+  text-align: center;
+  font-size: 0.875rem;
 }
 
-
-/* Tablet: 768px and below */
+/* tablets, 768px and below */
 @media only screen and (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.75rem;
-    }
+  .hero h1 {
+    font-size: 2.75rem;
+  }
 
-    .about {
-        flex-direction: column;
-    }
+  .about {
+    flex-direction: column;
+  }
 
-    .about-text,
-    .about-image {
-        width: 100%;
-    }
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
 
-    .schedule-list {
-        flex-wrap: wrap;
-    }
+  .schedule-list {
+    flex-wrap: wrap;
+  }
 
-    .schedule-card {
-        width: 45%;
-    }
+  .schedule-card {
+    width: 45%;
+  }
 }
 
-/* Phone: 480px and below */
+/* phones, 480px and below */
 @media only screen and (max-width: 480px) {
-    html {
-        font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 
-    .site-header {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
+  .site-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 
-    .hero {
-        padding: 4rem 5%;
-    }
+  .hero {
+    padding: 4rem 5%;
+  }
 
-    .hero h1 {
-        font-size: 2.25rem;
-    }
+  .hero h1 {
+    font-size: 2.25rem;
+  }
 
-    .schedule-card {
-        width: 100%;
-    }
+  .schedule-card {
+    width: 100%;
+  }
 
-    .membership-list {
-        flex-direction: column;
-        align-items: center;
-    }
+  .membership-list {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .membership-card {
-        width: 100%;
-    }
+  .membership-card {
+    width: 100%;
+  }
 }
